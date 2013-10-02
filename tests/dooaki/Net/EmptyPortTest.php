@@ -9,6 +9,7 @@ class EmptyPortTest extends \PHPUnit_Framework_TestCase
     public function test_find_tcp() 
     {
         $this->assertNotEmpty(EmptyPort::find());
+        $this->assertNotEmpty(EmptyPort::find(5963));
     }
 
     public function test_find_udp() 
