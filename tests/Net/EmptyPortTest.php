@@ -1,5 +1,6 @@
 <?php
 namespace dooaki\Test\Net;
+
 use dooaki\Net\EmptyPort;
 
 class EmptyPortTest extends \PHPUnit_Framework_TestCase

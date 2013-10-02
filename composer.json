@@ -22,7 +22,7 @@
     "satooshi/php-coveralls": "dev-master"
   },
   "autoload": {
-    "psr-0": { "do-aki\\Net" : "src" }
+    "psr-0": { "dooaki\\Net\\" : "src/" }
   }
 }
 
