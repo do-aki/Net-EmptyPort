@@ -6,6 +6,7 @@ Net-EmptyPort
 
 Net-EmptyPort is php library finding an empty TCP/UDP port.
 
+Original is cpan module [Net::EmptyPort](https://metacpan.org/module/Net::EmptyPort)
 
 Requirements
 -------------
@@ -15,19 +16,19 @@ Requirements
 Installation
 -------------
 
-you can install the script with <a href="http://getcomposer.org" target="_blank">Composer</a>.
+you can install the script with [Composer](http://getcomposer.org/).
 
 in your `composer.json` file:
 ```
 {
-    "require-dev": {
+    "require": {
         "dooaki/net-empty_port": "dev-master"
     }
 }
 ```
 
 ```
-php composer.phar install
+composer.phar install
 ```
 
 Methods
@@ -51,7 +52,6 @@ checks the given port is already used.
 also works for UDP
 ```
   $dns_udp_used = EmptyPort::isPortUsed(53, 'udp');
-
 ```
 
 ### wait($port, $max_wait_sec[, $protol])
